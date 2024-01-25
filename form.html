@@ -13,30 +13,25 @@
         <a href="form.html">Form</a>
     </nav>
     <h1>Formulir </h1>
-    <form action="form-post.html" method="POST">
+    <form action="form-post.html" method="post">
         <div>
             <label for="name">Nama Lengkap</label>
-            <input id="name" type="text" placeholder="Nama">
+            <input id="name" name="name" type="text" placeholder="Nama">
         </div>
 
         <div>
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email">
+            <input id="email" name="email" type="email" placeholder="Email">
         </div>
 
         <div>
             <label for="password">Password</label>
-            <input id="password" placeholder="Password">
+            <input id="password" name="password" type="password" placeholder="Password">
         </div>
         
         <div>
             <label for="number">No WhatsApp</label>
-            <input id="number" type="number" placeholder="Telepon">
-        </div>
-        
-        <div>
-            <label for="color">Warna</label>
-            <input id="color" placeholder="kasih warna sukamu">
+            <input id="number" name="number" type="number" placeholder="Telepon">
         </div>
 
         <div>
@@ -50,9 +45,41 @@
         </div>
     </form>
 
+    <hr>
+
+    <h1>Pesanan</h1>
+    <form action="form-post.html" method="post">
+        <div>
+            <label for="baju">Baju</label>
+            <input type="radio" name="baju" id="baju" value="kemeja" checked> <label for="">kemeja</label>
+            <input type="radio" name="baju" id="baju" value="kaos"> <label for="">kaos</label>
+        </div>
+
+        <div>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran">
+                <option value="">pilih</option>
+                <option value="s">small</option>
+                <option value="m" selected>medium</option>
+                <option value="l">large</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="betul">Sesuai Pesanan</label>
+            <input type="checkbox" name="betul" id="betul" value="betul">
+        </div>
+
+        <div>
+            <label for="notes">Catatan</label> <br>
+            <textarea name="notes" id="notes" cols="22" rows="5" placeholder=""></textarea>
+        </div>
+        <button type="submit">Order</button>
+    </form>
+
     <footer>
-        <p>Copyright &copy;</p> 
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN Reference</a>
+        <p>Copyright &copy; 2024</p> 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">MDN Reference</a>
     </footer>
 </body>
 </html>
