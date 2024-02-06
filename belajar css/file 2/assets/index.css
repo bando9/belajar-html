@@ -1,0 +1,19 @@
+section p {
+    color: green;
+}
+.jokes > p {
+    color: aqua;
+}
+
+a + button {
+    background-color: blueviolet;
+    color: white;
+}
+
+input[type="text"] {
+    color: red;
+}
+
+footer {
+    margin-top: 50px;
+}
