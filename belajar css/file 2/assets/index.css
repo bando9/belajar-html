@@ -1,8 +1,9 @@
-section p {
-    color: green;
-}
 .jokes > p {
     color: aqua;
+}
+
+.jokes > p:hover {
+    cursor: pointer;
 }
 
 a + button {
@@ -10,8 +11,29 @@ a + button {
     color: white;
 }
 
+section button:hover {
+    background-color: aqua;
+}
+
 input[type="text"] {
     color: red;
+}
+
+section:nth-of-type(2n) {
+    background-color: grey;
+    padding: 5px;
+}
+
+section h3::first-letter { 
+    font-size: xx-large;
+}
+
+section p::first-line{
+    color: red;
+}
+
+section h3::after{
+    content: '*';
 }
 
 footer {
